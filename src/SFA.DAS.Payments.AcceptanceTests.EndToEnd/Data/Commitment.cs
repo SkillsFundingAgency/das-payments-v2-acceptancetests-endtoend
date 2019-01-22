@@ -1,4 +1,5 @@
 ﻿using System;
+using SFA.DAS.Payments.Model.Core.Entities;
 
 namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Data
 {
@@ -28,10 +29,5 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Data
         public DateTime? PausedOnDate { get; set; }
         public DateTime? WithdrawnOnDate { get; set; }
         public string AccountLegalEntityPublicHashedId { get; set; }
-    }
-
-    public enum CommitmentPaymentStatus
-    {
-
     }
 }
