@@ -206,20 +206,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SFA.DAS.Payments.AcceptanceTests.Core\SFA.DAS.Payments.AcceptanceTests.Core.csproj">
-      <Project>{0F0BEB68-7F9F-4D39-B85A-3FE7701BB6CC}</Project>
-      <Name>SFA.DAS.Payments.AcceptanceTests.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.AcceptanceTests.Services\SFA.DAS.Payments.AcceptanceTests.Services.csproj">
-      <Project>{c367da42-6ed6-4028-b754-f39148f5d2c8}</Project>
-      <Name>SFA.DAS.Payments.AcceptanceTests.Services</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.Application\SFA.DAS.Payments.Application.csproj">
-      <Project>{23551cd8-7554-4f2c-9b42-a67b9e0c261d}</Project>
-      <Name>SFA.DAS.Payments.Application</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Scripts\PaymentsQuery.sql" />
   </ItemGroup>
   <ItemGroup>
