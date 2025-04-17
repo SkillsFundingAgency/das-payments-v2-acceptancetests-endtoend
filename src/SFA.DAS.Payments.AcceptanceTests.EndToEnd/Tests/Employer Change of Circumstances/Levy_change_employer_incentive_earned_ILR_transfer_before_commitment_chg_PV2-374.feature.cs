@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Employer_Change_of_Circumstances
+namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.EmployerChangeOfCircumstances
 {
     using TechTalk.SpecFlow;
     
@@ -92,7 +92,7 @@ testRunner.Given("the \"employer 1\" levy account balance in collection period R
 testRunner.And("the \"employer 2\" levy account balance in collection period R03/Current Academic Y" +
                     "ear is 17000", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table471 = new TechTalk.SpecFlow.Table(new string[] {
                         "Identifier",
                         "Employer",
                         "start date",
@@ -102,7 +102,7 @@ testRunner.And("the \"employer 2\" levy account balance in collection period R03
                         "effective from",
                         "effective to",
                         "stop effective from"});
-            table1.AddRow(new string[] {
+            table471.AddRow(new string[] {
                         "Apprentiiship 1",
                         "employer 1",
                         "01/Aug/Current Academic Year",
@@ -112,7 +112,7 @@ testRunner.And("the \"employer 2\" levy account balance in collection period R03
                         "01/Aug/Current Academic Year",
                         "14/Nov/Current Academic Year",
                         "15/Nov/Current Academic Year"});
-            table1.AddRow(new string[] {
+            table471.AddRow(new string[] {
                         "Apprentiiship 2",
                         "employer 2",
                         "15/Nov/Current Academic Year",
@@ -123,9 +123,9 @@ testRunner.And("the \"employer 2\" levy account balance in collection period R03
                         "",
                         ""});
 #line 9
-testRunner.And("the following commitments exist", ((string)(null)), table1, "And ");
+testRunner.And("the following commitments exist", ((string)(null)), table471, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table472 = new TechTalk.SpecFlow.Table(new string[] {
                         "Start Date",
                         "Planned Duration",
                         "Total Training Price",
@@ -141,7 +141,7 @@ testRunner.And("the following commitments exist", ((string)(null)), table1, "And
                         "Programme Type",
                         "Funding Line Type",
                         "SFA Contribution Percentage"});
-            table2.AddRow(new string[] {
+            table472.AddRow(new string[] {
                         "01/Aug/Current Academic Year",
                         "12 months",
                         "6000",
@@ -158,9 +158,9 @@ testRunner.And("the following commitments exist", ((string)(null)), table1, "And
                         "16-18 Apprenticeship (From May 2017) Levy Contract",
                         "90%"});
 #line 13
-testRunner.And("the provider previously submitted the following learner details", ((string)(null)), table2, "And ");
+testRunner.And("the provider previously submitted the following learner details", ((string)(null)), table472, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table473 = new TechTalk.SpecFlow.Table(new string[] {
                         "Delivery Period",
                         "On-Programme",
                         "Completion",
@@ -169,7 +169,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "Second16To18EmployerIncentive",
                         "First16To18ProviderIncentive",
                         "Second16To18ProviderIncentive"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Aug/Current Academic Year",
                         "500",
                         "0",
@@ -178,7 +178,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "0",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Sep/Current Academic Year",
                         "500",
                         "0",
@@ -187,7 +187,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "0",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Oct/Current Academic Year",
                         "500",
                         "0",
@@ -196,7 +196,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "0",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Nov/Current Academic Year",
                         "500",
                         "0",
@@ -205,7 +205,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "500",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Dec/Current Academic Year",
                         "500",
                         "0",
@@ -214,7 +214,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "0",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Jan/Current Academic Year",
                         "500",
                         "0",
@@ -223,7 +223,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "0",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Feb/Current Academic Year",
                         "500",
                         "0",
@@ -232,7 +232,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "0",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Mar/Current Academic Year",
                         "500",
                         "0",
@@ -241,7 +241,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "0",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Apr/Current Academic Year",
                         "500",
                         "0",
@@ -250,7 +250,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "0",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "May/Current Academic Year",
                         "500",
                         "0",
@@ -259,7 +259,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "0",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Jun/Current Academic Year",
                         "500",
                         "0",
@@ -268,7 +268,7 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "0",
                         "0"});
-            table3.AddRow(new string[] {
+            table473.AddRow(new string[] {
                         "Jul/Current Academic Year",
                         "500",
                         "0",
@@ -278,36 +278,36 @@ testRunner.And("the provider previously submitted the following learner details"
                         "0",
                         "500"});
 #line 16
-testRunner.And("the following earnings had been generated for the learner", ((string)(null)), table3, "And ");
+testRunner.And("the following earnings had been generated for the learner", ((string)(null)), table473, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table474 = new TechTalk.SpecFlow.Table(new string[] {
                         "Collection Period",
                         "Delivery Period",
                         "Levy Payments",
                         "Transaction Type",
                         "Employer"});
-            table4.AddRow(new string[] {
+            table474.AddRow(new string[] {
                         "R01/Current Academic Year",
                         "Aug/Current Academic Year",
                         "500",
                         "Learning",
                         "employer 1"});
-            table4.AddRow(new string[] {
+            table474.AddRow(new string[] {
                         "R02/Current Academic Year",
                         "Sep/Current Academic Year",
                         "500",
                         "Learning",
                         "employer 1"});
-            table4.AddRow(new string[] {
+            table474.AddRow(new string[] {
                         "R03/Current Academic Year",
                         "Oct/Current Academic Year",
                         "500",
                         "Learning",
                         "employer 1"});
 #line 30
-testRunner.And("the following provider payments had been generated", ((string)(null)), table4, "And ");
+testRunner.And("the following provider payments had been generated", ((string)(null)), table474, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table475 = new TechTalk.SpecFlow.Table(new string[] {
                         "Start Date",
                         "Planned Duration",
                         "Total Training Price",
@@ -322,7 +322,7 @@ testRunner.And("the following provider payments had been generated", ((string)(n
                         "Standard Code",
                         "Programme Type",
                         "Funding Line Type"});
-            table5.AddRow(new string[] {
+            table475.AddRow(new string[] {
                         "01/Aug/Current Academic Year",
                         "12 months",
                         "6000",
@@ -338,9 +338,9 @@ testRunner.And("the following provider payments had been generated", ((string)(n
                         "25",
                         "16-18 Apprenticeship (From May 2017) Levy Contract"});
 #line 35
-testRunner.But("the Provider now changes the Learner details as follows", ((string)(null)), table5, "But ");
+testRunner.But("the Provider now changes the Learner details as follows", ((string)(null)), table475, "But ");
 #line hidden
-            TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table476 = new TechTalk.SpecFlow.Table(new string[] {
                         "Price Episode Id",
                         "Total Training Price",
                         "Total Training Price Effective Date",
@@ -352,7 +352,7 @@ testRunner.But("the Provider now changes the Learner details as follows", ((stri
                         "Residual Assessment Price Effective Date",
                         "SFA Contribution Percentage",
                         "Contract Type"});
-            table6.AddRow(new string[] {
+            table476.AddRow(new string[] {
                         "pe-1",
                         "6000",
                         "06/Aug/Current Academic Year",
@@ -364,7 +364,7 @@ testRunner.But("the Provider now changes the Learner details as follows", ((stri
                         "",
                         "90%",
                         "Act1"});
-            table6.AddRow(new string[] {
+            table476.AddRow(new string[] {
                         "pe-2",
                         "6000",
                         "06/Aug/Current Academic Year",
@@ -377,12 +377,12 @@ testRunner.But("the Provider now changes the Learner details as follows", ((stri
                         "90%",
                         "Act1"});
 #line 38
-testRunner.And("price details as follows", ((string)(null)), table6, "And ");
+testRunner.And("price details as follows", ((string)(null)), table476, "And ");
 #line 42
 testRunner.When("the amended ILR file is re-submitted for the learners in collection period R04/Cu" +
                     "rrent Academic Year", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table477 = new TechTalk.SpecFlow.Table(new string[] {
                         "Delivery Period",
                         "On-Programme",
                         "Completion",
@@ -392,7 +392,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "First16To18ProviderIncentive",
                         "Second16To18ProviderIncentive",
                         "Price Episode Identifier"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Aug/Current Academic Year",
                         "500",
                         "0",
@@ -402,7 +402,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "0",
                         "0",
                         "pe-1"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Sep/Current Academic Year",
                         "500",
                         "0",
@@ -412,7 +412,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "0",
                         "0",
                         "pe-1"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Oct/Current Academic Year",
                         "500",
                         "0",
@@ -422,7 +422,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "0",
                         "0",
                         "pe-1"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Nov/Current Academic Year",
                         "500",
                         "0",
@@ -432,7 +432,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "500",
                         "0",
                         "pe-2"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Dec/Current Academic Year",
                         "500",
                         "0",
@@ -442,7 +442,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "0",
                         "0",
                         "pe-2"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Jan/Current Academic Year",
                         "500",
                         "0",
@@ -452,7 +452,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "0",
                         "0",
                         "pe-2"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Feb/Current Academic Year",
                         "500",
                         "0",
@@ -462,7 +462,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "0",
                         "0",
                         "pe-2"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Mar/Current Academic Year",
                         "500",
                         "0",
@@ -472,7 +472,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "0",
                         "0",
                         "pe-2"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Apr/Current Academic Year",
                         "500",
                         "0",
@@ -482,7 +482,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "0",
                         "0",
                         "pe-2"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "May/Current Academic Year",
                         "500",
                         "0",
@@ -492,7 +492,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "0",
                         "0",
                         "pe-2"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Jun/Current Academic Year",
                         "500",
                         "0",
@@ -502,7 +502,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "0",
                         "0",
                         "pe-2"});
-            table7.AddRow(new string[] {
+            table477.AddRow(new string[] {
                         "Jul/Current Academic Year",
                         "500",
                         "0",
@@ -513,7 +513,7 @@ testRunner.When("the amended ILR file is re-submitted for the learners in collec
                         "500",
                         "pe-2"});
 #line 43
-testRunner.Then("the following learner earnings should be generated", ((string)(null)), table7, "Then ");
+testRunner.Then("the following learner earnings should be generated", ((string)(null)), table477, "Then ");
 #line 57
 testRunner.And("Month end is triggered", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 58

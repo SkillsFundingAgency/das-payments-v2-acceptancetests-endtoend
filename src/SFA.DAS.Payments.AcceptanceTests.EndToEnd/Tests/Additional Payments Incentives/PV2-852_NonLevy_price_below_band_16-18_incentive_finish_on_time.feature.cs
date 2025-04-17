@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_Incentives
+namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.AdditionalPaymentsIncentives
 {
     using TechTalk.SpecFlow;
     
@@ -80,7 +80,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
  this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
                         "Start Date",
                         "Planned Duration",
                         "Total Training Price",
@@ -97,7 +97,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "Programme Type",
                         "Funding Line Type",
                         "SFA Contribution Percentage"});
-            table1.AddRow(new string[] {
+            table104.AddRow(new string[] {
                         "06/Aug/Last Academic Year",
                         "12 months",
                         "8250",
@@ -115,93 +115,93 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "16-18 Apprenticeship (From May 2017) Non-Levy Contract (non-procured)",
                         "90%"});
 #line 40
- testRunner.Given("the provider previously submitted the following learner details", ((string)(null)), table1, "Given ");
+ testRunner.Given("the provider previously submitted the following learner details", ((string)(null)), table104, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
                         "Delivery Period",
                         "On-Programme",
                         "Completion",
                         "Balancing",
                         "First16To18EmployerIncentive",
                         "First16To18ProviderIncentive"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Aug/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "0",
                         "0"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Sep/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "0",
                         "0"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Oct/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "0",
                         "0"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Nov/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "500",
                         "500"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Dec/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "0",
                         "0"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Jan/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "0",
                         "0"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Feb/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "0",
                         "0"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Mar/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "0",
                         "0"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Apr/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "0",
                         "0"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "May/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "0",
                         "0"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Jun/Last Academic Year",
                         "550",
                         "0",
                         "0",
                         "0",
                         "0"});
-            table2.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "Jul/Last Academic Year",
                         "550",
                         "0",
@@ -209,107 +209,107 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0"});
 #line 44
-    testRunner.And("the following earnings had been generated for the learner", ((string)(null)), table2, "And ");
+    testRunner.And("the following earnings had been generated for the learner", ((string)(null)), table105, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table106 = new TechTalk.SpecFlow.Table(new string[] {
                         "Collection Period",
                         "Delivery Period",
                         "SFA Co-Funded Payments",
                         "Employer Co-Funded Payments",
                         "SFA Fully-Funded Payments",
                         "Transaction Type"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R01/Last Academic Year",
                         "Aug/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R02/Last Academic Year",
                         "Sep/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R03/Last Academic Year",
                         "Oct/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R04/Last Academic Year",
                         "Nov/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R05/Last Academic Year",
                         "Dec/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R06/Last Academic Year",
                         "Jan/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R07/Last Academic Year",
                         "Feb/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R08/Last Academic Year",
                         "Mar/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R09/Last Academic Year",
                         "Apr/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R10/Last Academic Year",
                         "May/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R11/Last Academic Year",
                         "Jun/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R12/Last Academic Year",
                         "Jul/Last Academic Year",
                         "495",
                         "55",
                         "0",
                         "Learning"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R04/Last Academic Year",
                         "Nov/Last Academic Year",
                         "0",
                         "0",
                         "500",
                         "First16To18EmployerIncentive"});
-            table3.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "R04/Last Academic Year",
                         "Nov/Last Academic Year",
                         "0",
@@ -317,9 +317,9 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "500",
                         "First16To18ProviderIncentive"});
 #line 58
-    testRunner.And("the following provider payments had been generated", ((string)(null)), table3, "And ");
+    testRunner.And("the following provider payments had been generated", ((string)(null)), table106, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table107 = new TechTalk.SpecFlow.Table(new string[] {
                         "Priority",
                         "Start Date",
                         "Planned Duration",
@@ -337,7 +337,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "Programme Type",
                         "Funding Line Type",
                         "SFA Contribution Percentage"});
-            table4.AddRow(new string[] {
+            table107.AddRow(new string[] {
                         "1",
                         "06/Aug/Last Academic Year",
                         "12 months",
@@ -356,9 +356,9 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "16-18 Apprenticeship (From May 2017) Non-Levy Contract (non-procured)",
                         "90%"});
 #line 76
-    testRunner.But("the Provider now changes the Learner details as follows", ((string)(null)), table4, "But ");
+    testRunner.But("the Provider now changes the Learner details as follows", ((string)(null)), table107, "But ");
 #line hidden
-            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table108 = new TechTalk.SpecFlow.Table(new string[] {
                         "Price Episode Id",
                         "Total Training Price",
                         "Total Training Price Effective Date",
@@ -370,7 +370,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "Residual Assessment Price Effective Date",
                         "SFA Contribution Percentage",
                         "Contract Type"});
-            table5.AddRow(new string[] {
+            table108.AddRow(new string[] {
                         "pe-1",
                         "8250",
                         "06/Aug/Last Academic Year",
@@ -383,12 +383,12 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "90%",
                         "Act2"});
 #line 80
- testRunner.And("price details as follows", ((string)(null)), table5, "And ");
+ testRunner.And("price details as follows", ((string)(null)), table108, "And ");
 #line 84
  testRunner.When("the amended ILR file is re-submitted for the learners in collection period R01/Cu" +
                     "rrentAcademic Year", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table109 = new TechTalk.SpecFlow.Table(new string[] {
                         "Delivery Period",
                         "On-Programme",
                         "Completion",
@@ -396,7 +396,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "Second16To18EmployerIncentive",
                         "Second16To18ProviderIncentive",
                         "Price Episode Identifier"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Aug/Current Academic Year",
                         "0",
                         "1650",
@@ -404,7 +404,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "500",
                         "500",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Sep/Current Academic Year",
                         "0",
                         "0",
@@ -412,7 +412,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Oct/Current Academic Year",
                         "0",
                         "0",
@@ -420,7 +420,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Nov/Current Academic Year",
                         "0",
                         "0",
@@ -428,7 +428,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Dec/Current Academic Year",
                         "0",
                         "0",
@@ -436,7 +436,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Jan/Current Academic Year",
                         "0",
                         "0",
@@ -444,7 +444,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Feb/Current Academic Year",
                         "0",
                         "0",
@@ -452,7 +452,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Mar/Current Academic Year",
                         "0",
                         "0",
@@ -460,7 +460,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Apr/Current Academic Year",
                         "0",
                         "0",
@@ -468,7 +468,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "May/Current Academic Year",
                         "0",
                         "0",
@@ -476,7 +476,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Jun/Current Academic Year",
                         "0",
                         "0",
@@ -484,7 +484,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "0",
                         "pe-1"});
-            table6.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "Jul/Current Academic Year",
                         "0",
                         "0",
@@ -493,9 +493,9 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "0",
                         "pe-1"});
 #line 85
- testRunner.Then("the following learner earnings should be generated", ((string)(null)), table6, "Then ");
+ testRunner.Then("the following learner earnings should be generated", ((string)(null)), table109, "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table110 = new TechTalk.SpecFlow.Table(new string[] {
                         "Collection Period",
                         "Delivery Period",
                         "On-Programme",
@@ -503,7 +503,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "Balancing",
                         "Second16To18EmployerIncentive",
                         "Second16To18ProviderIncentive"});
-            table7.AddRow(new string[] {
+            table110.AddRow(new string[] {
                         "R01/Current Academic Year",
                         "Aug/Current Academic Year",
                         "0",
@@ -512,30 +512,30 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "500",
                         "500"});
 #line 100
-    testRunner.And("only the following payments will be calculated", ((string)(null)), table7, "And ");
+    testRunner.And("only the following payments will be calculated", ((string)(null)), table110, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table111 = new TechTalk.SpecFlow.Table(new string[] {
                         "Collection Period",
                         "Delivery Period",
                         "SFA Co-Funded Payments",
                         "Employer Co-Funded Payments",
                         "SFA Fully Funded Payments",
                         "Transaction Type"});
-            table8.AddRow(new string[] {
+            table111.AddRow(new string[] {
                         "R01/Current Academic Year",
                         "Aug/Current Academic Year",
                         "1485",
                         "165",
                         "0",
                         "Completion"});
-            table8.AddRow(new string[] {
+            table111.AddRow(new string[] {
                         "R01/Current Academic Year",
                         "Aug/Current Academic Year",
                         "0",
                         "0",
                         "500",
                         "Second16To18EmployerIncentive"});
-            table8.AddRow(new string[] {
+            table111.AddRow(new string[] {
                         "R01/Current Academic Year",
                         "Aug/Current Academic Year",
                         "0",
@@ -543,30 +543,30 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "500",
                         "Second16To18ProviderIncentive"});
 #line 104
- testRunner.And("only the following provider payments will be recorded", ((string)(null)), table8, "And ");
+ testRunner.And("only the following provider payments will be recorded", ((string)(null)), table111, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table112 = new TechTalk.SpecFlow.Table(new string[] {
                         "Collection Period",
                         "Delivery Period",
                         "SFA Co-Funded Payments",
                         "Employer Co-Funded Payments",
                         "SFA Fully Funded Payments",
                         "Transaction Type"});
-            table9.AddRow(new string[] {
+            table112.AddRow(new string[] {
                         "R01/Current Academic Year",
                         "Aug/Current Academic Year",
                         "1485",
                         "165",
                         "0",
                         "Completion"});
-            table9.AddRow(new string[] {
+            table112.AddRow(new string[] {
                         "R01/Current Academic Year",
                         "Aug/Current Academic Year",
                         "0",
                         "0",
                         "500",
                         "Second16To18EmployerIncentive"});
-            table9.AddRow(new string[] {
+            table112.AddRow(new string[] {
                         "R01/Current Academic Year",
                         "Aug/Current Academic Year",
                         "0",
@@ -574,7 +574,7 @@ namespace SFA.DAS.Payments.AcceptanceTests.EndToEnd.Tests.Additional_Payments_In
                         "500",
                         "Second16To18ProviderIncentive"});
 #line 110
- testRunner.And("at month end only the following provider payments will be generated", ((string)(null)), table9, "And ");
+ testRunner.And("at month end only the following provider payments will be generated", ((string)(null)), table112, "And ");
 #line hidden
             this.ScenarioCleanup();
         }

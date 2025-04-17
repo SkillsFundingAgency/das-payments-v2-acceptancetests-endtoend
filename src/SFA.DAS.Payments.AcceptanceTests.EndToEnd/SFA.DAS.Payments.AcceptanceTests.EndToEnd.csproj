@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Teronis.MSBuild.Packaging.ProjectBuildInPackage.0.1.1\build\Teronis.MSBuild.Packaging.ProjectBuildInPackage.props" Condition="Exists('..\packages\Teronis.MSBuild.Packaging.ProjectBuildInPackage.0.1.1\build\Teronis.MSBuild.Packaging.ProjectBuildInPackage.props')" />
   <Import Project="..\packages\SpecFlow.Tools.MsBuild.Generation.2.4.1\build\SpecFlow.Tools.MsBuild.Generation.props" Condition="Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.2.4.1\build\SpecFlow.Tools.MsBuild.Generation.props')" />
   <Import Project="..\packages\NUnit3TestAdapter.3.11.2\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.11.2\build\net35\NUnit3TestAdapter.props')" />
   <Import Project="..\packages\NUnit.3.11.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" />
@@ -38,8 +39,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=4.8.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
+    <Reference Include="Autofac, Version=7.0.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.7.0.1\lib\netstandard2.0\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="AutoFixture, Version=4.11.0.0, Culture=neutral, PublicKeyToken=b24654c590009d4f, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoFixture.4.11.0\lib\net452\AutoFixture.dll</HintPath>
@@ -50,8 +51,8 @@
     <Reference Include="ESFA.DC.CollectionsManagement.Models, Version=0.1.6.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ESFA.DC.CollectionsManagement.Models.0.1.6-beta0001\lib\netstandard2.0\ESFA.DC.CollectionsManagement.Models.dll</HintPath>
     </Reference>
-    <Reference Include="ESFA.DC.ILR.FundingService.FM36.FundingOutput.Model, Version=0.1.17.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ESFA.DC.ILR.2425.FundingService.FM36.FundingOutput.Model.0.1.17\lib\netstandard2.0\ESFA.DC.ILR.FundingService.FM36.FundingOutput.Model.dll</HintPath>
+    <Reference Include="ESFA.DC.ILR.FundingService.FM36.FundingOutput.Model, Version=0.17.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ESFA.DC.ILR.2223.FundingService.FM36.FundingOutput.Model.0.17.2\lib\netstandard2.0\ESFA.DC.ILR.FundingService.FM36.FundingOutput.Model.dll</HintPath>
     </Reference>
     <Reference Include="ESFA.DC.ILR.Model.Loose, Version=0.1.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ESFA.DC.ILR.1819.Model.Loose.0.1.5-beta0001\lib\netstandard2.0\ESFA.DC.ILR.Model.Loose.dll</HintPath>
@@ -118,6 +119,9 @@
     </Reference>
     <Reference Include="Microsoft.Azure.Services.AppAuthentication, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Azure.Services.AppAuthentication.1.0.3\lib\net452\Microsoft.Azure.Services.AppAuthentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.EntityFrameworkCore, Version=2.2.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.EntityFrameworkCore.2.2.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
@@ -230,6 +234,9 @@
     <Reference Include="NServiceBus.Azure.Transports.WindowsAzureServiceBus, Version=9.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
       <HintPath>..\packages\NServiceBus.Azure.Transports.WindowsAzureServiceBus.9.0.3\lib\net46\NServiceBus.Azure.Transports.WindowsAzureServiceBus.dll</HintPath>
     </Reference>
+    <Reference Include="NServiceBus.Azure.Transports.WindowsAzureStorageQueues, Version=8.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.8.1.0\lib\net452\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.dll</HintPath>
+    </Reference>
     <Reference Include="NServiceBus.Callbacks, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
       <HintPath>..\packages\NServiceBus.Callbacks.3.0.0\lib\net452\NServiceBus.Callbacks.dll</HintPath>
     </Reference>
@@ -239,11 +246,11 @@
     <Reference Include="NServiceBus.Newtonsoft.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
       <HintPath>..\packages\NServiceBus.Newtonsoft.Json.2.1.0\lib\net452\NServiceBus.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NServiceBus.ObjectBuilder.Autofac, Version=7.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NServiceBus.Autofac.7.0.0\lib\net452\NServiceBus.ObjectBuilder.Autofac.dll</HintPath>
-    </Reference>
     <Reference Include="NServiceBus.Persistence.AzureStorage, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
       <HintPath>..\packages\NServiceBus.Persistence.AzureStorage.2.3.0\lib\net452\NServiceBus.Persistence.AzureStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Transport.AzureServiceBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.Transport.AzureServiceBus.1.3.1\lib\net461\NServiceBus.Transport.AzureServiceBus.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.11.0\lib\net45\nunit.framework.dll</HintPath>
@@ -287,9 +294,57 @@
     <Reference Include="SFA.DAS.EAS.Account.Api.Types, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SFA.DAS.Account.Api.Types.1.6.1469\lib\net45\SFA.DAS.EAS.Account.Api.Types.dll</HintPath>
     </Reference>
+    <Reference Include="SFA.DAS.Payments.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.Core.2.0.5\lib\netstandard2.0\SFA.DAS.Payments.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.DataLocks.Messages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.DataLocks.Messages.1.0.3\lib\netstandard2.0\SFA.DAS.Payments.DataLocks.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.DataLocks.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.DataLocks.Model.1.0.3\lib\netstandard2.0\SFA.DAS.Payments.DataLocks.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.EarningEvents.Messages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.EarningEvents.Messages.1.0.5\lib\netstandard2.0\SFA.DAS.Payments.EarningEvents.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.EarningEvents.Messages.Internal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.EarningEvents.Messages.Internal.1.0.5\lib\netstandard2.0\SFA.DAS.Payments.EarningEvents.Messages.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.FundingSource.Messages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.FundingSource.Messages.1.0.3\lib\netstandard2.0\SFA.DAS.Payments.FundingSource.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.FundingSource.Messages.Internal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.FundingSource.Messages.Internal.1.0.3\lib\netstandard2.0\SFA.DAS.Payments.FundingSource.Messages.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.FundingSource.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.FundingSource.Model.1.0.3\lib\netstandard2.0\SFA.DAS.Payments.FundingSource.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.Messages.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.Messages.Common.1.1.0\lib\netstandard2.0\SFA.DAS.Payments.Messages.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.Messages.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.Monitoring.Jobs.Messages.0.0.14\lib\netstandard2.0\SFA.DAS.Payments.Messages.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.Messaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.Messaging.1.1.0\lib\netstandard2.0\SFA.DAS.Payments.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.Model.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.Monitoring.Jobs.Messages.0.0.14\lib\netstandard2.0\SFA.DAS.Payments.Model.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.Monitoring.Jobs.Messages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.Monitoring.Jobs.Messages.0.0.14\lib\netstandard2.0\SFA.DAS.Payments.Monitoring.Jobs.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.PeriodEnd.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.PeriodEnd.Model.1.1.3\lib\netstandard2.0\SFA.DAS.Payments.PeriodEnd.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.ProviderPayments.Messages.Internal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.ProviderPayments.Messages.Internal.1.2.2\lib\netstandard2.0\SFA.DAS.Payments.ProviderPayments.Messages.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="SFA.DAS.Payments.RequiredPayments.Messages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SFA.DAS.Payments.RequiredPayments.Messages.1.0.4\lib\netstandard2.0\SFA.DAS.Payments.RequiredPayments.Messages.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Collections.Immutable.1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
@@ -308,8 +363,8 @@
     <Reference Include="System.Data.SqlClient, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.6.0\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
-    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Fabric, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=AMD64">
@@ -333,8 +388,8 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -353,16 +408,16 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -402,6 +457,9 @@
     </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
@@ -3017,41 +3075,9 @@
       <Project>{1ED3DE66-AF18-497A-AFA1-7073AF785E9B}</Project>
       <Name>SFA.DAS.Payments.Audit.AcceptanceTests</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.Core\SFA.DAS.Payments.Core.csproj">
-      <Project>{F6E38368-C397-488B-B041-D3E8423C1CE1}</Project>
-      <Name>SFA.DAS.Payments.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SFA.DAS.Payments.DataLocks.Domain\SFA.DAS.Payments.DataLocks.Domain.csproj">
       <Project>{88F8C227-EFFC-47C7-80A4-EC7854EC813E}</Project>
       <Name>SFA.DAS.Payments.DataLocks.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.DataLocks.Messages\SFA.DAS.Payments.DataLocks.Messages.csproj">
-      <Project>{8CCB04EB-09DC-4E49-810F-5313D6A666BA}</Project>
-      <Name>SFA.DAS.Payments.DataLocks.Messages</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.EarningEvents.Messages.Internal\SFA.DAS.Payments.EarningEvents.Messages.Internal.csproj">
-      <Project>{B5FF4D1A-925D-4979-9363-4C8298C483B8}</Project>
-      <Name>SFA.DAS.Payments.EarningEvents.Messages.Internal</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.EarningEvents.Messages\SFA.DAS.Payments.EarningEvents.Messages.csproj">
-      <Project>{07A36781-D09B-4CF9-8D0B-80BB929FE535}</Project>
-      <Name>SFA.DAS.Payments.EarningEvents.Messages</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.FundingSource.Messages.Internal\SFA.DAS.Payments.FundingSource.Messages.Internal.csproj">
-      <Project>{95F83345-7AD6-477C-A271-3C7F8CA0529B}</Project>
-      <Name>SFA.DAS.Payments.FundingSource.Messages.Internal</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.FundingSource.Messages\SFA.DAS.Payments.FundingSource.Messages.csproj">
-      <Project>{43861469-71A2-4128-B35A-FB680F1E8BCA}</Project>
-      <Name>SFA.DAS.Payments.FundingSource.Messages</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.Messages.Core\SFA.DAS.Payments.Messages.Core.csproj">
-      <Project>{678e5d09-c96d-49cc-811f-78ddcb37a474}</Project>
-      <Name>SFA.DAS.Payments.Messages.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.Model.Core\SFA.DAS.Payments.Model.Core.csproj">
-      <Project>{fafc16fb-316e-4c83-9f35-d0d36ddccaf7}</Project>
-      <Name>SFA.DAS.Payments.Model.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\SFA.DAS.Payments.Monitoring.Jobs.Client\SFA.DAS.Payments.Monitoring.Jobs.Client.csproj">
       <Project>{66b42b94-b29b-48ea-9ab6-c96c11c1d9ce}</Project>
@@ -3060,10 +3086,6 @@
     <ProjectReference Include="..\SFA.DAS.Payments.Monitoring.Jobs.Data\SFA.DAS.Payments.Monitoring.Jobs.Data.csproj">
       <Project>{D9849B05-C642-48F7-AA6D-FA917257AE45}</Project>
       <Name>SFA.DAS.Payments.Monitoring.Jobs.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.Monitoring.Jobs.Messages\SFA.DAS.Payments.Monitoring.Jobs.Messages.csproj">
-      <Project>{9274abb3-9f30-4320-a111-17ba07dbf568}</Project>
-      <Name>SFA.DAS.Payments.Monitoring.Jobs.Messages</Name>
     </ProjectReference>
     <ProjectReference Include="..\SFA.DAS.Payments.Monitoring.Jobs.Model\SFA.DAS.Payments.Monitoring.Jobs.Model.csproj">
       <Project>{dc3c2dfe-ce0c-4b40-9a80-392b600fcded}</Project>
@@ -3081,14 +3103,6 @@
       <Project>{9803CF82-6B7D-4527-A545-F31D1B4EF7DE}</Project>
       <Name>SFA.DAS.Payments.PeriodEnd.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.PeriodEnd.Model\SFA.DAS.Payments.PeriodEnd.Model.csproj">
-      <Project>{c7b276f8-1451-4818-9675-16fad054bf30}</Project>
-      <Name>SFA.DAS.Payments.PeriodEnd.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.ProviderPayments.Messages.Internal\SFA.DAS.Payments.ProviderPayments.Messages.Internal.csproj">
-      <Project>{25B9DFA3-DF0C-4C53-A991-1F3D3BB407A8}</Project>
-      <Name>SFA.DAS.Payments.ProviderPayments.Messages.Internal</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SFA.DAS.Payments.ProviderPayments.Messages\SFA.DAS.Payments.ProviderPayments.Messages.csproj">
       <Project>{f41ed226-c11e-44c3-825a-c40143f0fef9}</Project>
       <Name>SFA.DAS.Payments.ProviderPayments.Messages</Name>
@@ -3096,10 +3110,6 @@
     <ProjectReference Include="..\SFA.DAS.Payments.RequiredPayments.Domain\SFA.DAS.Payments.RequiredPayments.Domain.csproj">
       <Project>{F63F1E0D-03B8-447A-910B-D7990D2E480A}</Project>
       <Name>SFA.DAS.Payments.RequiredPayments.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SFA.DAS.Payments.RequiredPayments.Messages\SFA.DAS.Payments.RequiredPayments.Messages.csproj">
-      <Project>{21918F17-1310-4276-BEF5-64243F9E0C31}</Project>
-      <Name>SFA.DAS.Payments.RequiredPayments.Messages</Name>
     </ProjectReference>
     <ProjectReference Include="..\SFA.DAS.Payments.Tests.Core\SFA.DAS.Payments.Tests.Core.csproj">
       <Project>{64B5C1EB-36A9-4A56-AD6B-B70C90FC23D7}</Project>
@@ -3126,10 +3136,15 @@
     <Error Condition="!Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.2.4.1\build\SpecFlow.Tools.MsBuild.Generation.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.Tools.MsBuild.Generation.2.4.1\build\SpecFlow.Tools.MsBuild.Generation.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.VisualStudio.SlowCheetah.3.1.66\build\Microsoft.VisualStudio.SlowCheetah.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.VisualStudio.SlowCheetah.3.1.66\build\Microsoft.VisualStudio.SlowCheetah.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.ServiceFabric.Actors.3.2.162\build\net45\Microsoft.ServiceFabric.Actors.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ServiceFabric.Actors.3.2.162\build\net45\Microsoft.ServiceFabric.Actors.targets'))" />
+    <Error Condition="!Exists('..\packages\NServiceBus.Autofac.8.0.0\build\net461\NServiceBus.Autofac.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NServiceBus.Autofac.8.0.0\build\net461\NServiceBus.Autofac.targets'))" />
+    <Error Condition="!Exists('..\packages\Teronis.MSBuild.Packaging.ProjectBuildInPackage.0.1.1\build\Teronis.MSBuild.Packaging.ProjectBuildInPackage.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Teronis.MSBuild.Packaging.ProjectBuildInPackage.0.1.1\build\Teronis.MSBuild.Packaging.ProjectBuildInPackage.props'))" />
+    <Error Condition="!Exists('..\packages\Teronis.MSBuild.Packaging.ProjectBuildInPackage.0.1.1\build\Teronis.MSBuild.Packaging.ProjectBuildInPackage.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Teronis.MSBuild.Packaging.ProjectBuildInPackage.0.1.1\build\Teronis.MSBuild.Packaging.ProjectBuildInPackage.targets'))" />
   </Target>
   <Import Project="..\packages\Microsoft.Azure.Services.AppAuthentication.1.0.3\build\Microsoft.Azure.Services.AppAuthentication.targets" Condition="Exists('..\packages\Microsoft.Azure.Services.AppAuthentication.1.0.3\build\Microsoft.Azure.Services.AppAuthentication.targets')" />
   <Import Project="..\packages\SpecFlow.2.4.1\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.4.1\build\SpecFlow.targets')" />
   <Import Project="..\packages\SpecFlow.Tools.MsBuild.Generation.2.4.1\build\SpecFlow.Tools.MsBuild.Generation.targets" Condition="Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.2.4.1\build\SpecFlow.Tools.MsBuild.Generation.targets')" />
   <Import Project="..\packages\Microsoft.VisualStudio.SlowCheetah.3.1.66\build\Microsoft.VisualStudio.SlowCheetah.targets" Condition="Exists('..\packages\Microsoft.VisualStudio.SlowCheetah.3.1.66\build\Microsoft.VisualStudio.SlowCheetah.targets')" />
   <Import Project="..\packages\Microsoft.ServiceFabric.Actors.3.2.162\build\net45\Microsoft.ServiceFabric.Actors.targets" Condition="Exists('..\packages\Microsoft.ServiceFabric.Actors.3.2.162\build\net45\Microsoft.ServiceFabric.Actors.targets')" />
+  <Import Project="..\packages\NServiceBus.Autofac.8.0.0\build\net461\NServiceBus.Autofac.targets" Condition="Exists('..\packages\NServiceBus.Autofac.8.0.0\build\net461\NServiceBus.Autofac.targets')" />
+  <Import Project="..\packages\Teronis.MSBuild.Packaging.ProjectBuildInPackage.0.1.1\build\Teronis.MSBuild.Packaging.ProjectBuildInPackage.targets" Condition="Exists('..\packages\Teronis.MSBuild.Packaging.ProjectBuildInPackage.0.1.1\build\Teronis.MSBuild.Packaging.ProjectBuildInPackage.targets')" />
 </Project>
